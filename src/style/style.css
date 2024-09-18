@@ -932,7 +932,7 @@ footer p {
 
 .fade-in-3d {
   opacity: 0;
-  transform: rotateX(90deg);
+  transform: rotateY(90deg);
   transition: opacity 2s ease, transform 2s ease;
 }
 
