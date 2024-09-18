@@ -1,5 +1,8 @@
 @use "../variables" as *;
 // Introduce
+body {
+    background-color: $secondary-light;
+}
 .introduce {
     width: 100%;
     height: auto;
@@ -10,6 +13,14 @@
     flex-direction: column;
     gap: 150px;
     padding: 200px;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: opacity 5s ease, transform 5s ease;
+
+    &.fade-in {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
     @media (max-width: 1302px) {
         padding: 200px 100px;
     }
