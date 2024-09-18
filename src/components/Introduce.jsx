@@ -4,17 +4,15 @@ function Introduce() {
     return (
         <section className="introduce">
             <p className="introduce-title" id="introduce">
-                <span>
-                    &emsp;&emsp;融合古今智慧，我們創造出獨特的茶飲
-                    <br />
-                    藝術，將東方的傳統帶向全球。選用頂級原料，
-                    <br />
-                    結合現代技術精釀，為全世界的茶愛好者提供
-                    <br />
-                    卓越的品茶體驗。探索與我們一起，感受茶文化
-                    <br />
-                    的深度與創新的完美交融。
-                </span>
+                &emsp;&emsp;融合古今智慧，我們創造出獨特的茶飲
+                <br />
+                藝術，將東方的傳統帶向全球。選用頂級原料，
+                <br />
+                結合現代技術精釀，為全世界的茶愛好者提供
+                <br />
+                卓越的品茶體驗。探索與我們一起，感受茶文化
+                <br />
+                的深度與創新的完美交融。
             </p>
             <div className="introduce-main">
                 <div className="introduce-img">

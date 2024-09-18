@@ -18,6 +18,7 @@
         align-items: center;
         color: $text-dark;
         font-size: map-get($font-size, rwd-content);
+        width: 100%;
         span {
             margin-left: 10%;
         }
