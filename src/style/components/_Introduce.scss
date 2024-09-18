@@ -10,6 +10,15 @@
     flex-direction: column;
     gap: 150px;
     padding: 200px;
+    @media (max-width: 1302px) {
+        padding: 200px 100px;
+    }
+    @media (max-width: 1044px) {
+        padding: 200px 50px;
+    }
+    @media (max-width: 533px) {
+        padding: 200px 0px;
+    }
 
     p.introduce-title {
         color: $text-dark;
@@ -38,7 +47,8 @@
         @media ($media-large) {
             flex-direction: column;
             // height: 100%;
-            gap: 15%;
+            gap: 100px;
+            align-items: center;
         }
         .introduce-img {
             width: 22.5vw;

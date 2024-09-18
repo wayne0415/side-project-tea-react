@@ -297,6 +297,21 @@ button {
   gap: 150px;
   padding: 200px;
 }
+@media (max-width: 1302px) {
+  .introduce {
+    padding: 200px 100px;
+  }
+}
+@media (max-width: 1044px) {
+  .introduce {
+    padding: 200px 50px;
+  }
+}
+@media (max-width: 533px) {
+  .introduce {
+    padding: 200px 0px;
+  }
+}
 .introduce p.introduce-title {
   color: #3c474d;
   font-size: 2vw;
@@ -325,7 +340,8 @@ button {
 @media (max-width:992px) {
   .introduce .introduce-main {
     flex-direction: column;
-    gap: 15%;
+    gap: 100px;
+    align-items: center;
   }
 }
 .introduce .introduce-main .introduce-img {
