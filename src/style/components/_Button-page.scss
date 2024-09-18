@@ -43,6 +43,7 @@
 
         .button-page-content {
             color: $text-light;
+            margin-left: 5%;
             @media ($media-mid) {
                 text-align: center;
             }
@@ -94,6 +95,7 @@
 
         .button-page-content {
             color: $text-light;
+            margin-right: 5%;
             @media ($media-mid) {
                 text-align: center;
             }

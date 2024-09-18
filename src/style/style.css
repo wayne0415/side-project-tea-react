@@ -358,6 +358,7 @@ button {
 .introduce .introduce-main .introduce-content {
   display: flex;
   flex-direction: column;
+  color: #3c474d;
   height: 100%;
   gap: 100px;
 }
@@ -472,6 +473,7 @@ button {
 }
 .button-page .button-page-item1 .button-page-content {
   color: #e5dfd7;
+  margin-left: 5%;
 }
 @media (max-width:768px) {
   .button-page .button-page-item1 .button-page-content {
@@ -524,6 +526,7 @@ button {
 }
 .button-page .button-page-item2 .button-page-content {
   color: #e5dfd7;
+  margin-right: 5%;
 }
 @media (max-width:768px) {
   .button-page .button-page-item2 .button-page-content {
@@ -788,7 +791,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 125vh;
+  padding: 300px 0 200px 0;
   color: #3c474d;
 }
 @media (max-width:992px) {
@@ -887,6 +890,7 @@ footer p {
 .back-to-top:hover {
   background-color: #e5dfd7;
   color: #639872;
+  outline: 2px solid #639872;
 }
 .back-to-top:hover svg {
   transform: scale(1.3);

@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer>
-            <p>copyright Wayne Chen © 2024</p>
+            <p>Copyright Wayne Chen © 2024</p>
         </footer>
     );
 }
