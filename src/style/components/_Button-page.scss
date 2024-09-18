@@ -1,0 +1,152 @@
+@use "../variables" as *;
+// Button-page
+.button-page {
+    height: 287vh;
+    background-color: $primary-dark;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18.5vh;
+    @media ($media-large) {
+        height: 200vh;
+        gap: 10vh;
+    }
+
+    .button-page-item1 {
+        width: 87vw;
+        display: flex;
+        align-items: center;
+        @media ($media-mid) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-page-img {
+            width: 37.5vw;
+            height: 50vw;
+            margin-right: 12vw;
+            min-width: 267px;
+            min-height: 390px;
+            @media ($media-mid) {
+                margin-right: 0;
+                margin-bottom: 32px;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .button-page-content {
+            color: $text-light;
+            @media ($media-mid) {
+                text-align: center;
+            }
+
+            h3 {
+                margin-bottom: 48px;
+                font-size: map-get($font-size, rwd-content);
+                @media ($media-large) {
+                    font-size: map-get($font-size, body-title);
+                }
+            }
+            p.button-page-content-big {
+                margin-bottom: 32px;
+                font-size: map-get($font-size, body-title);
+            }
+            p.button-page-content-small {
+                margin-bottom: 48px;
+                font-size: map-get($font-size, body-content);
+            }
+            .a-button {
+                border-radius: 99px;
+                background-color: $btn-green;
+                color: $text-light;
+                padding: 12px 24px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: $btn-green;
+                    background-color: $secondary-light;
+                }
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .button-page-item2 {
+        width: 87vw;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        @media ($media-mid) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-page-content {
+            color: $text-light;
+            @media ($media-mid) {
+                text-align: center;
+            }
+
+            h3 {
+                margin-bottom: 48px;
+                font-size: map-get($font-size, rwd-content);
+                @media ($media-large) {
+                    font-size: map-get($font-size, body-title);
+                }
+            }
+            p.button-page-content-big {
+                margin-bottom: 32px;
+                font-size: map-get($font-size, body-title);
+            }
+            p.button-page-content-small {
+                margin-bottom: 48px;
+                font-size: map-get($font-size, body-content);
+            }
+            .a-button {
+                border-radius: 99px;
+                background-color: $btn-green;
+                color: $text-light;
+                padding: 12px 24px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: $btn-green;
+                    background-color: $secondary-light;
+                }
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .button-page-img {
+            width: 37.5vw;
+            height: 50vw;
+            margin-left: 12vw;
+            min-width: 267px;
+            min-height: 390px;
+            @media ($media-mid) {
+                margin-left: 0;
+                margin-bottom: 32px;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

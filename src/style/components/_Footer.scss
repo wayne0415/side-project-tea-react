@@ -1,0 +1,14 @@
+@use "../variables" as *;
+
+// Footer
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-dark;
+    padding: 30px 0;
+    p {
+        font-size: map-get($font-size, nav-title);
+        color: $text-light;
+    }
+}

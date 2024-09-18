@@ -1,0 +1,93 @@
+@use "../variables" as *;
+// Introduce
+.introduce {
+    width: 100%;
+    height: 180vh;
+    background-color: $secondary-light;
+    position: relative;
+    @media (max-width: 1306px) {
+        padding-top: 40vh;
+    }
+
+    p.introduce-title {
+        position: absolute;
+        top: 49.2vh;
+        right: 21.8vw;
+        color: $text-dark;
+        font-size: map-get($font-size, rwd-content);
+        @media (max-width: 1306px) {
+            position: static;
+            display: flex;
+            justify-content: center;
+            margin-right: -10vw;
+        }
+        @media (max-width: 1306px) {
+            margin-right: 0;
+        }
+        @media ($media-large) {
+            font-size: map-get($font-size, nav-title);
+            margin-right: 0;
+        }
+        @media ($media-sm) {
+            font-size: 1rem;
+            margin-right: 0;
+        }
+    }
+
+    .introduce-main {
+        display: flex;
+        position: absolute;
+        width: 62.5vw;
+        justify-content: space-between;
+        top: 96.5vh;
+        left: 18.75vw;
+        @media (max-width: 1306px) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @media (max-width: 1148px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 5vh;
+        }
+
+        .introduce-img {
+            width: 22.5vw;
+            height: 30.2vw;
+            @media (max-width: 1306px) {
+                width: 293px;
+                height: 393px;
+            }
+            @media (max-width: 1148px) {
+                width: 175px;
+                height: 235px;
+            }
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .introduce-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10.8vh;
+            @media (max-width: 1148px) {
+                gap: 5vh;
+            }
+            .introduce-item {
+                color: $text-dark;
+                h3 {
+                    font-size: map-get($font-size, body-title);
+                    margin-bottom: 3vh;
+                }
+                p {
+                    font-size: map-get($font-size, body-content);
+                }
+            }
+        }
+    }
+}

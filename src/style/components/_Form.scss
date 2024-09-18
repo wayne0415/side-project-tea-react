@@ -1,0 +1,72 @@
+@use "../variables" as *;
+// Form
+.form {
+    background-color: $secondary-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+    color: $text-dark;
+    @media ($media-large) {
+        height: 125vh;
+    }
+    @media (max-width: 580px) {
+        height: 100vh;
+    }
+
+    form {
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+
+        width: 580px;
+        @media (max-width: 580) {
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+        label {
+            margin: 0 0 8px 0;
+            &.required:after {
+                content: " *"; /* 自動添加星號 */
+                color: red; /* 將星號設置為紅色 */
+            }
+        }
+        input {
+            margin: 0 0 20px 0;
+            border-radius: 1rem;
+            padding: 1rem 1.25rem;
+        }
+        textarea {
+            margin: 0 0 20px 0;
+            border-radius: 1rem;
+            padding: 1rem 1.25rem;
+        }
+        small {
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+        button {
+            font-size: map-get($font-size, button-font);
+            width: auto;
+            border: none;
+            border-radius: 99px;
+            margin: 0 auto; /* 水平置中 */
+            padding: 12px 120px;
+            cursor: pointer;
+            text-align: center;
+            background-color: $btn-green;
+            color: $text-light;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: $secondary-light;
+                color: $btn-green;
+                outline: 2px solid $btn-green;
+            }
+        }
+    }
+}

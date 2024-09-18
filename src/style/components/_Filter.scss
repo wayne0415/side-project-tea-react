@@ -1,0 +1,115 @@
+@use "../variables" as *;
+// Filter
+
+.filter {
+    width: 100%;
+    height: 180vh;
+    background-color: $secondary-light;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding-top: 20%;
+    gap: 15%;
+    // 篩選標題樣式
+    p.filter-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text-dark;
+        font-size: map-get($font-size, rwd-content);
+        span {
+            margin-left: 10%;
+        }
+    }
+
+    // 主內容區塊
+    .filter-main {
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+    }
+    // 圖片區塊
+    .filter-img {
+        width: 22.5vw;
+        height: 30.2vw;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // 篩選表單
+    .filter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+
+        // 篩選按鈕樣式
+        .filter-button {
+            display: flex;
+            gap: 24px;
+
+            button {
+                border: none;
+                width: 180px;
+                white-space: nowrap;
+                text-align: center;
+                padding: 12px 24px;
+                border-radius: 99px;
+                font-size: map-get($font-size, button-font);
+                color: $text-light;
+                cursor: pointer; // 確保按鈕可點擊
+                transition: all 0.3s ease-in-out;
+
+                &.black-tea {
+                    background-color: $btn-red;
+
+                    &:hover {
+                        color: $btn-red;
+                        background-color: $secondary-light;
+                        outline: 2px solid $btn-red;
+                    }
+                }
+
+                &.oolong-tea {
+                    background-color: $btn-brown;
+
+                    &:hover {
+                        color: $btn-brown;
+                        background-color: $secondary-light;
+                        outline: 2px solid $btn-brown;
+                    }
+                }
+
+                &.green-tea {
+                    background-color: $btn-green;
+
+                    &:hover {
+                        color: $btn-green;
+                        background-color: $secondary-light;
+                        outline: 2px solid $btn-green;
+                    }
+                }
+            }
+        }
+
+        // 茶品列表區域
+        #tea-list {
+            .filter-content {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// 響應式設計

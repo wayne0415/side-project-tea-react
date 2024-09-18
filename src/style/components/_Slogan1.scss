@@ -1,0 +1,50 @@
+@use "../variables" as *;
+// Slogan1
+.slogan1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/slogan-big-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    @media ($media-large) {
+        height: 60vh;
+    }
+
+    p {
+        position: absolute;
+        bottom: 6.5vh;
+        left: 4.7vw;
+        color: $text-light;
+        font-size: map-get($font-size, rwd-content);
+        @media ($media-large) {
+            font-size: map-get($font-size, nav-title);
+        }
+        @media ($media-mid) {
+            bottom: 20vh;
+        }
+        @media ($media-sm) {
+            font-size: 1rem;
+        }
+    }
+
+    .slogan1-img {
+        position: absolute;
+        right: 18.75vw;
+        bottom: -14.8vh;
+        width: 22.5vw;
+        height: 30.2vw;
+        min-width: 167px;
+        min-height: 228px;
+        @media ($media-large) {
+            bottom: -10vh;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

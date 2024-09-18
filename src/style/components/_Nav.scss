@@ -1,0 +1,104 @@
+@use "../variables" as *;
+
+// Nav
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 8vw;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease; // 添加 background-color 的过渡效果
+    z-index: 1000;
+
+    &.hidden {
+        transform: translateY(-100%);
+    }
+
+    &.scrolled {
+        background-color: rgba(0, 0, 0, 0.7); // 滚动超过阈值时的背景颜色
+    }
+
+    @media ($media-large) {
+        padding: 0.5vh 4vw;
+    }
+    @media ($media-mid) {
+        padding: 0.5vh 1.5vw;
+    }
+    @media ($media-sm) {
+        padding: 2vw 3vw;
+    }
+
+    .logo-wrapper {
+        max-width: 230px;
+        max-height: 67px;
+        min-width: 115px;
+        min-height: 33.5px;
+        overflow: hidden;
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+
+            @media ($media-large) {
+                width: 80%;
+                height: 80%;
+            }
+            @media ($media-mid) {
+                width: 70%;
+                height: 70%;
+            }
+            @media ($media-sm) {
+                width: 60%;
+                height: 60%;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 3.3vw;
+
+        @media ($media-mid) {
+            gap: 1.5vw;
+        }
+        @media ($media-sm) {
+            flex-direction: column;
+        }
+
+        a {
+            font-size: map-get($font-size, nav-title);
+            white-space: nowrap;
+            color: $text-light;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            transform-style: preserve-3d;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 40%;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $primary-super-dark;
+                transition: width 0.3s ease;
+            }
+
+            &:hover {
+                transform: scale(1.15);
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+}

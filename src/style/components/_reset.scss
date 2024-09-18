@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "LocalFont";
+    src: url("../assets/fonts/jf-openhuninn-2.0.ttf");
+}
+/* 重置所有標籤的樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: inherit;
+}
+
+html {
+    scroll-behavior: smooth; /* 啟用平滑滾動 */
+}
+/* 重置字體 */
+body {
+    font-family: "LocalFont", sans-serif;
+    font-size: 100%;
+    line-height: 1.25;
+    letter-spacing: 5%;
+}
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+/* 重置列表 */
+ul,
+ol {
+    list-style: none;
+}
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+/* 重置連接 */
+a {
+    text-decoration: none;
+}
+input {
+    border: none;
+}
+textarea {
+    border: none;
+}
+button {
+    font-family: "LocalFont", sans-serif;
+}

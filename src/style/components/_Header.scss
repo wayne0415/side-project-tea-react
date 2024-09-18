@@ -1,0 +1,125 @@
+@use "../variables" as *;
+// Header
+.header-section {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+
+    .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    // 共用的 span 樣式
+    p.small {
+        position: absolute;
+        top: 32vh;
+        left: 10vw;
+        color: $text-light;
+        font-size: map-get($font-size, rwd-content);
+        @media ($media-large) {
+            font-size: map-get($font-size, nav-title);
+        }
+        @media ($media-sm) {
+            font-size: 1rem;
+        }
+
+        span {
+            opacity: 0;
+            transform: translateY(200px);
+            animation: fadeInUp 2s ease-in-out forwards;
+        }
+
+        // 單獨設置 delay
+        span.first-delay {
+            animation-delay: 0s;
+        }
+
+        span.second-delay {
+            animation-delay: 0.5s;
+        }
+
+        span.third-delay {
+            animation-delay: 1s;
+        }
+    }
+
+    .big-container {
+        position: absolute;
+        width: auto;
+        bottom: 5%;
+        color: $text-light;
+        font-size: map-get($font-size, rwd-big-title);
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(200px);
+        animation: fadeInUp 2s 1.3s ease-in-out forwards;
+        @media ($media-large) {
+            bottom: 8%;
+        }
+        @media ($media-mid) {
+            bottom: 10%;
+        }
+        @media ($media-sm) {
+            bottom: 12%;
+        }
+
+        // big1 和 big2 使用不同動畫，保持跑馬燈效果
+        .big1 {
+            display: flex;
+            animation: big1Move 30s -30s linear infinite;
+            span {
+                margin-right: 10vw;
+            }
+        }
+
+        .big2 {
+            display: flex;
+            animation: big2Move 30s -15s linear infinite;
+            span {
+                margin-right: 10vw;
+            }
+        }
+    }
+
+    // big1 的動畫
+    @keyframes big1Move {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    // big2 的動畫
+    @keyframes big2Move {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+
+    // 通用的淡入上升動畫
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(200px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
