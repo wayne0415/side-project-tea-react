@@ -370,17 +370,6 @@ button {
   font-size: 1rem;
 }
 
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 2s ease;
-}
-
-.fade-in-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .slogan1 {
   width: 100%;
   height: 100vh;
@@ -435,35 +424,6 @@ button {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-
-.fade-in-up {
-  opacity: 0;
-  transform: translateY(200px);
-  transition: all 2s ease;
-}
-
-.fade-in-left {
-  opacity: 0;
-  transform: translateX(200px);
-  transition: all 2s ease;
-}
-
-.fade-in-right {
-  opacity: 0;
-  transform: translateX(-200px);
-  transition: all 2s ease;
-}
-
-.fade-in-down {
-  opacity: 0;
-  transform: translateY(-200px);
-  transition: all 2s ease;
-}
-
-.visible {
-  opacity: 1;
-  transform: translate(0, 0); /* 同時重設 X 和 Y 變換 */
 }
 
 .button-page {
@@ -938,4 +898,46 @@ footer p {
 .back-to-top.show {
   opacity: 1;
   visibility: visible;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 2s ease;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 2s ease;
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 2s ease;
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 2s ease;
+}
+
+.fade-in-down {
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: all 2s ease;
+}
+
+.fade-in-3d {
+  opacity: 0;
+  transform: rotateX(90deg);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0); /* 同時重設 X 和 Y 變換 */
+  transform: rotateY(0deg); /* 滾動進入畫面時進行 3D 翻轉 */
 }/*# sourceMappingURL=style.css.map */

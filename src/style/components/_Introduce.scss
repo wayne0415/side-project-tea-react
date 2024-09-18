@@ -82,13 +82,3 @@
         }
     }
 }
-.fade-in-section {
-    opacity: 0;
-    transform: translateY(200px); // 縮小元素
-    transition: all 2s ease;
-}
-
-.fade-in-section.visible {
-    opacity: 1;
-    transform: translateY(0); // 回到正常大小
-}
