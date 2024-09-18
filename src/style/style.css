@@ -177,7 +177,7 @@ button {
   overflow: hidden;
 }
 .header-section .background-video {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -286,10 +286,6 @@ button {
   }
 }
 
-body {
-  background-color: #e5dfd7;
-}
-
 .introduce {
   width: 100%;
   height: auto;
@@ -300,13 +296,6 @@ body {
   flex-direction: column;
   gap: 150px;
   padding: 200px;
-  opacity: 0;
-  transform: translateY(0px);
-  transition: opacity 5s ease, transform 5s ease;
-}
-.introduce.fade-in {
-  opacity: 1;
-  transform: translateY(-100px);
 }
 @media (max-width: 1302px) {
   .introduce {

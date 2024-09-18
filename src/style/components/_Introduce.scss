@@ -1,8 +1,5 @@
 @use "../variables" as *;
-// Introduce
-body {
-    background-color: $secondary-light;
-}
+
 .introduce {
     width: 100%;
     height: auto;
@@ -13,14 +10,6 @@ body {
     flex-direction: column;
     gap: 150px;
     padding: 200px;
-    opacity: 0;
-    transform: translateY(0px);
-    transition: opacity 5s ease, transform 5s ease;
-
-    &.fade-in {
-        opacity: 1;
-        transform: translateY(-100px);
-    }
     @media (max-width: 1302px) {
         padding: 200px 100px;
     }
@@ -57,7 +46,6 @@ body {
 
         @media ($media-large) {
             flex-direction: column;
-            // height: 100%;
             gap: 100px;
             align-items: center;
         }
@@ -80,11 +68,13 @@ body {
             color: $text-dark;
             height: 100%;
             gap: 100px;
+
             .introduce-item {
                 h3 {
                     font-size: map-get($font-size, body-title);
                     margin-bottom: 2rem;
                 }
+
                 p {
                     font-size: map-get($font-size, body-content);
                 }

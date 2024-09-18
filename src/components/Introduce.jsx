@@ -1,37 +1,8 @@
-import { useEffect, useRef } from "react";
 import woman1 from "../assets/images/introduce-img.svg";
 
 function Introduce() {
-    const introduceRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("fade-in"); // 觸發效果
-                    } else {
-                        entry.target.classList.remove("fade-in"); // 當離開視窗時移除效果
-                    }
-                });
-            },
-            {
-                root: null, // 預設為 viewport
-                rootMargin: "0px", // 可設置元件觸發時機的 margin
-                threshold: 0.1, // 0.1 表示元素 10% 進入視窗時觸發
-            }
-        );
-
-        const section = introduceRef.current;
-        if (section) observer.observe(section);
-
-        return () => {
-            if (section) observer.unobserve(section);
-        };
-    }, []);
-
     return (
-        <section className="introduce" ref={introduceRef}>
+        <section className="introduce">
             <p className="introduce-title" id="introduce">
                 &emsp;&emsp;融合古今智慧，我們創造出獨特的茶飲
                 <br />
