@@ -25,9 +25,11 @@ function Introduce() {
                     </FadeInSection>
                 </div>
                 <div className="introduce-content">
-                    <FadeInSection>
-                        <div className="introduce-item">
+                    <div className="introduce-item">
+                        <FadeInSection>
                             <h3>跨越疆界，品味無限</h3>
+                        </FadeInSection>
+                        <FadeInSection>
                             <p>
                                 我們相信，美味無需國界限制。
                                 <br />
@@ -37,11 +39,14 @@ function Introduce() {
                                 <br />
                                 每一口都是這場交融的篇章，帶領您探索無限的味覺邊界。
                             </p>
-                        </div>
-                    </FadeInSection>
-                    <FadeInSection>
-                        <div className="introduce-item">
+                        </FadeInSection>
+                    </div>
+
+                    <div className="introduce-item">
+                        <FadeInSection>
                             <h3>每一口，都是藝術的結晶</h3>
+                        </FadeInSection>
+                        <FadeInSection>
                             <p>
                                 期待一場令人難忘的美食旅程吧，
                                 <br />
@@ -49,8 +54,8 @@ function Introduce() {
                                 <br />
                                 匠心獨具，優雅呈現，讓每一餐都成為獨特的美味體驗。
                             </p>
-                        </div>
-                    </FadeInSection>
+                        </FadeInSection>
+                    </div>
                 </div>
             </div>
         </section>

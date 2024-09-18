@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-function FadeInSection({ children }) {
+function FadeInSection({ children, effect = "" }) {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
 
@@ -31,7 +31,7 @@ function FadeInSection({ children }) {
     }, []);
 
     return (
-        <div ref={sectionRef} className={`fade-in-section ${isVisible ? "visible" : ""}`}>
+        <div ref={sectionRef} className={`fade-in-section ${effect} ${isVisible ? "visible" : ""}`}>
             {children}
         </div>
     );
