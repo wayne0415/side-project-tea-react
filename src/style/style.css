@@ -468,8 +468,8 @@ button {
 }
 .button-page .button-page-item1 .button-page-img img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 .button-page .button-page-item1 .button-page-content {
   color: #e5dfd7;
@@ -579,8 +579,8 @@ button {
 }
 .button-page .button-page-item2 .button-page-img img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 .slogan2 {
