@@ -1,7 +1,9 @@
 @use "../variables" as *;
 // Button-page
 .button-page {
-    height: 287vh;
+    // height: 287vh;
+    padding-top: 400px;
+    padding-bottom: 200px;
     background-color: $primary-dark;
     display: flex;
     flex-direction: column;
@@ -17,6 +19,7 @@
         width: 87vw;
         display: flex;
         align-items: center;
+        justify-content: center;
 
         @media ($media-mid) {
             flex-direction: column;

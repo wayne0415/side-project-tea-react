@@ -427,7 +427,8 @@ button {
 }
 
 .button-page {
-  height: 287vh;
+  padding-top: 400px;
+  padding-bottom: 200px;
   background-color: #5a6a72;
   display: flex;
   flex-direction: column;
@@ -445,6 +446,7 @@ button {
   width: 87vw;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width:768px) {
   .button-page .button-page-item1 {
