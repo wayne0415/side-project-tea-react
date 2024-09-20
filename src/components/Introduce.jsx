@@ -1,10 +1,10 @@
-import woman1 from "../assets/images/introduce-img.svg";
+import woman1 from "../assets/images/introduce-s.jpg";
 import FadeInSection from "./FadeInSection";
 
 function Introduce() {
     return (
         <section className="introduce">
-            <p className="introduce-title" id="introduce">
+            <div className="introduce-title" id="introduce">
                 <FadeInSection>
                     &emsp;&emsp;融合古今智慧，我們創造出獨特的茶飲
                     <br />
@@ -16,7 +16,7 @@ function Introduce() {
                     <br />
                     的深度與創新的完美交融。
                 </FadeInSection>
-            </p>
+            </div>
 
             <div className="introduce-main">
                 <div className="introduce-img">
