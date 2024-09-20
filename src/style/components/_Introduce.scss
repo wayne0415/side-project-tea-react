@@ -20,7 +20,7 @@
         padding: 200px 0px;
     }
 
-    p.introduce-title {
+    .introduce-title {
         color: $text-dark;
         font-size: map-get($font-size, rwd-content);
         display: flex;

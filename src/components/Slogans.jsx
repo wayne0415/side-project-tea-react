@@ -6,7 +6,7 @@ import FadeInSection from "./FadeInSection";
 function Slogan1() {
     return (
         <section className="slogan1">
-            <div>
+            <div className="slogan1-title">
                 <FadeInSection effect="fade-in-up">
                     <span>從古老茶藝中汲取靈感，</span>
                 </FadeInSection>
@@ -32,7 +32,7 @@ function Slogan1() {
 function Slogan2() {
     return (
         <section className="slogan2">
-            <div>
+            <div className="slogan2-title">
                 <FadeInSection effect="fade-in-right">
                     <span>傳承茶道精髓，</span>
                 </FadeInSection>
@@ -55,7 +55,7 @@ function Slogan2() {
 function Slogan3() {
     return (
         <section className="slogan3">
-            <div>
+            <div className="slogan3-title">
                 <FadeInSection effect="fade-in-up">以傳統茶藝為靈感，</FadeInSection>
 
                 <FadeInSection effect="fade-in-up">精心打造每一絲茶香，以熱忱與匠心，</FadeInSection>
