@@ -17,6 +17,7 @@
         width: 87vw;
         display: flex;
         align-items: center;
+
         @media ($media-mid) {
             flex-direction: column;
             justify-content: center;
@@ -26,7 +27,8 @@
         .button-page-img {
             width: 37.5vw;
             height: 50vw;
-            margin-right: 12vw;
+            margin-right: 8vw;
+
             min-width: 267px;
             min-height: 390px;
             @media ($media-mid) {
